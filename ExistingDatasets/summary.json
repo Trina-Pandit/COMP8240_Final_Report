@@ -1,0 +1,205 @@
+{
+  "config": {
+    "SEED": 42,
+    "MAX_PASSAGES": null,
+    "MQAG_MAX_PASSAGES": 20,
+    "PROMPT_MAX_PASSAGES": 30,
+    "MQAG_NUM_QUESTIONS": 5,
+    "MQAG_FP16": true,
+    "LLM_BACKEND": "hf",
+    "HF_LLM": "mistralai/Mistral-7B-Instruct-v0.2",
+    "OPENAI_MODEL": "gpt-3.5-turbo"
+  },
+  "table2": {
+    "SelfCheck-Unigram (max)": {
+      "NonFact": 85.62,
+      "NonFact*": 41.03,
+      "Factual": 58.43,
+      "Pearson": 64.72,
+      "Spearman": 64.91,
+      "n_passages": 238.0
+    },
+    "SelfCheck-BERTScore": {
+      "NonFact": 81.2,
+      "NonFact*": 45.27,
+      "Factual": 43.47,
+      "Pearson": 57.34,
+      "Spearman": 54.41,
+      "n_passages": 238.0
+    },
+    "SelfCheck-NLI": {
+      "NonFact": 92.5,
+      "NonFact*": 45.17,
+      "Factual": 66.08,
+      "Pearson": 74.14,
+      "Spearman": 73.78,
+      "n_passages": 238.0
+    },
+    "SelfCheck-QA": {
+      "NonFact": 82.43,
+      "NonFact*": 36.78,
+      "Factual": 41.62,
+      "Pearson": 68.4,
+      "Spearman": 69.48,
+      "n_passages": 20.0
+    },
+    "SelfCheck-Prompt (Mistral-7B-Instruct-v0.2)": {
+      "NonFact": 92.19,
+      "NonFact*": 46.76,
+      "Factual": 63.68,
+      "Pearson": 77.95,
+      "Spearman": 76.11,
+      "n_passages": 30.0
+    }
+  },
+  "table3": {
+    "WikiBio+Unigram (max)": {
+      "NonFact": 80.43,
+      "NonFact*": 31.47,
+      "Factual": 40.53,
+      "Pearson": 28.67,
+      "Spearman": 26.69,
+      "n_passages": 238.0
+    },
+    "WikiBio+BERTScore": {
+      "NonFact": 80.45,
+      "NonFact*": 39.82,
+      "Factual": 47.91,
+      "Pearson": 58.03,
+      "Spearman": 54.63,
+      "n_passages": 238.0
+    },
+    "WikiBio+NLI": {
+      "NonFact": 91.18,
+      "NonFact*": 48.14,
+      "Factual": 71.61,
+      "Pearson": 78.84,
+      "Spearman": 80.0,
+      "n_passages": 238.0
+    },
+    "WikiBio+QA": {
+      "NonFact": 87.86,
+      "NonFact*": 44.74,
+      "Factual": 44.95,
+      "Pearson": 73.52,
+      "Spearman": 78.51,
+      "n_passages": 20.0
+    },
+    "WikiBio+Prompt (Mistral-7B-Instruct-v0.2)": {
+      "NonFact": 90.23,
+      "NonFact*": 59.93,
+      "Factual": 66.49,
+      "Pearson": 80.55,
+      "Spearman": 75.28,
+      "n_passages": 30.0
+    }
+  },
+  "table5": {
+    "QA SimpleCount": {
+      "NonFact": 83.98,
+      "NonFact*": 43.09,
+      "Factual": 51.54,
+      "Pearson": 72.65,
+      "Spearman": 67.44,
+      "n_passages": 20.0
+    },
+    "QA +Bayes": {
+      "NonFact": 83.93,
+      "NonFact*": 40.09,
+      "Factual": 49.07,
+      "Pearson": 72.43,
+      "Spearman": 68.42,
+      "n_passages": 20.0
+    },
+    "QA +Bayes+alpha": {
+      "NonFact": 82.43,
+      "NonFact*": 36.78,
+      "Factual": 41.62,
+      "Pearson": 68.4,
+      "Spearman": 69.48,
+      "n_passages": 20.0
+    }
+  },
+  "table7": {
+    "Avg(-logp) 1-gram": {
+      "NonFact": 81.52,
+      "NonFact*": 40.33,
+      "Factual": 41.78,
+      "Pearson": 40.68,
+      "Spearman": 39.23,
+      "n_passages": 238.0
+    },
+    "Max(-logp) 1-gram": {
+      "NonFact": 85.62,
+      "NonFact*": 41.03,
+      "Factual": 58.43,
+      "Pearson": 64.72,
+      "Spearman": 64.91,
+      "n_passages": 238.0
+    },
+    "Avg(-logp) 2-gram": {
+      "NonFact": 83.22,
+      "NonFact*": 44.2,
+      "Factual": 52.89,
+      "Pearson": 52.2,
+      "Spearman": 53.83,
+      "n_passages": 238.0
+    },
+    "Max(-logp) 2-gram": {
+      "NonFact": 85.46,
+      "NonFact*": 39.28,
+      "Factual": 58.37,
+      "Pearson": 60.17,
+      "Spearman": 61.17,
+      "n_passages": 238.0
+    },
+    "Avg(-logp) 3-gram": {
+      "NonFact": 83.69,
+      "NonFact*": 43.68,
+      "Factual": 54.04,
+      "Pearson": 55.0,
+      "Spearman": 56.46,
+      "n_passages": 238.0
+    },
+    "Max(-logp) 3-gram": {
+      "NonFact": 85.0,
+      "NonFact*": 36.67,
+      "Factual": 57.19,
+      "Pearson": 54.48,
+      "Spearman": 53.66,
+      "n_passages": 238.0
+    },
+    "Avg(-logp) 4-gram": {
+      "NonFact": 83.73,
+      "NonFact*": 41.98,
+      "Factual": 54.15,
+      "Pearson": 51.62,
+      "Spearman": 52.49,
+      "n_passages": 238.0
+    },
+    "Max(-logp) 4-gram": {
+      "NonFact": 84.35,
+      "NonFact*": 35.55,
+      "Factual": 55.99,
+      "Pearson": 50.21,
+      "Spearman": 45.96,
+      "n_passages": 238.0
+    },
+    "Avg(-logp) 5-gram": {
+      "NonFact": 83.43,
+      "NonFact*": 40.42,
+      "Factual": 53.9,
+      "Pearson": 51.73,
+      "Spearman": 52.04,
+      "n_passages": 238.0
+    },
+    "Max(-logp) 5-gram": {
+      "NonFact": 84.03,
+      "NonFact*": 35.28,
+      "Factual": 54.94,
+      "Pearson": 49.58,
+      "Spearman": 45.1,
+      "n_passages": 238.0
+    }
+  }
+}

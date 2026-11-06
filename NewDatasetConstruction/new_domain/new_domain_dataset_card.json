@@ -1,0 +1,33 @@
+{
+  "n_topics": 90,
+  "n_topics_kept": 90,
+  "n_sentences_to_annotate": 421,
+  "domains": [
+    "company_history",
+    "historical_event",
+    "scientific_concept"
+  ],
+  "tiers": [
+    "less_known",
+    "popular"
+  ],
+  "generator": "HuggingFaceH4/zephyr-7b-beta",
+  "generation_signature": "1b6a0cca",
+  "config": {
+    "n_samples": 20,
+    "main_greedy": true,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "max_new_tokens": 220,
+    "seed": 42,
+    "fp16_or_4bit": "4bit"
+  },
+  "prompt_template": "Write a short, factual paragraph (4-6 sentences) about {topic}.",
+  "versions": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.20.2",
+    "spacy": "3.8.16"
+  }
+}
